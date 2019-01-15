@@ -1,0 +1,40 @@
+
+export default [
+    {
+        path:"/home",
+        component:()=>import("../params/home/home.vue"),
+        meta:{
+            showFooter:true
+        }
+    },
+    {
+        path:"/list",
+        component:()=>import("../params/list/list.vue"),
+        meta:{
+            showFooter:true
+        }
+    },
+    {
+        path:"/xqy",
+        component:()=>import("../params/xqy/xqy.vue"),
+        meta:{
+            showFooter:true
+        }
+    },
+    {
+        path:"/mao",
+        component:()=>import("../params/mao/mao.vue"),
+        meta:{
+            showFooter:true
+        }
+    },
+    {
+        path:"/login",
+        component:()=>import("../params/login/login.vue"),
+
+    },
+    {
+        path:"/",
+        redirect:"/home"
+    },
+]
